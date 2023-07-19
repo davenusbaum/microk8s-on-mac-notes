@@ -75,4 +75,16 @@ Name                    State             IPv4             Image
 primary                 Running           192.168.64.2     Ubuntu 22.04 LTS
 exalted-jaybird         Running           192.168.64.6     Ubuntu 22.04 LTS
 ```
-
+So clear everything and start again...
+```
+multipass delete exalted-jaybird
+multipass purge
+```
+Make sure the packaged version of multipass isn't installed
+```
+sudo sh "/Library/Application Support/com.canonical.multipass/uninstall.sh"
+```
+Remove multipass from homebrew
+```
+brew uninstall --zap multipass
+```
