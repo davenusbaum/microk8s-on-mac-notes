@@ -90,4 +90,13 @@ brew uninstall --zap multipass
 brew uninstall --zap ubuntu/microk8s/microk8s
 ```
 Restart for good measure and then start again
-
+```
+> brew install ubuntu/microk8s/microk8s
+> microk8s install
+MicroK8s is up and running. See the available commands with `microk8s --help`.
+> microk8s dashboard-proxy
+Checking if Dashboard is running.
+sudo: microk8s.enable: command not found
+An error occurred when trying to execute 'sudo microk8s.enable dashboard' with 'multipass': returned exit code 1.
+```
+Closer, microk8s is running, but I still cannot execute any commands.
