@@ -84,7 +84,10 @@ Make sure the packaged version of multipass isn't installed
 ```
 sudo sh "/Library/Application Support/com.canonical.multipass/uninstall.sh"
 ```
-Remove multipass from homebrew
+Remove multipass and microk8s from homebrew
 ```
 brew uninstall --zap multipass
+brew uninstall --zap ubuntu/microk8s/microk8s
 ```
+Restart for good measure and then start again
+
